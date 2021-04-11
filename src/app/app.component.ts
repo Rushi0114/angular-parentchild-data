@@ -17,6 +17,7 @@ export class AppComponent {
   ngOnInit() {
     this.customers = this.cuatomerService.cusstomerData;
     console.log(this.customers);
+    console.log(this.customers);
   }
 
   show(value) {
