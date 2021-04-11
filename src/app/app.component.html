@@ -1,0 +1,44 @@
+<hello name="{{ name }}"></hello>
+<p *ngIf="false">
+  Parent component
+</p>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Contact</th>
+
+  </tr>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.name}}</td>
+    <td>{{customer.age}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.contactNumber}}</td>
+  </tr>
+
+
+</table>
+
+<app-header [companyName]="companyName" [customers]="customers" (displayChild)="show($event)"
+  (displayData)="displayChild($event)"></app-header>
+
+<p>------- constucted from child ----- </p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Contact</th>
+
+  </tr>
+  <tr *ngFor="let customer of customers1">
+    <td>{{customer.name}}</td>
+    <td>{{customer.age}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.contactNumber}}</td>
+  </tr>
+</table>
+<app-template-form></app-template-form>

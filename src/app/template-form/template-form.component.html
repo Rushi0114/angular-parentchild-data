@@ -1,0 +1,11 @@
+<form (ngSubmit)="submit(loginForm.value)" #loginForm="ngForm">
+  <label for="user name">User Name:</label>
+  <input type="text" name="username" [(ngModel)]="customer.username"  #username="ngModel" required><br>
+  <span *ngIf="username.invalid && (username.dirty||username.touched)"></span>
+
+  <!--<label for="password">Password:</label>
+  <input type="password" #name="ngModel" [(ngModel)]="customer.password" required><br><br>-->
+  <label for="email">Email ID:</label>
+  <input type="text" name="email" #name="ngModel" [(ngModel)]="customer.email" required><br><br>
+  <input type="submit" value="Submit">
+</form>
