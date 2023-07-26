@@ -1,5 +1,5 @@
-import { Injectable } from "@angular/core";
-import { Customer } from "./customer";
+import { Injectable } from '@angular/core';
+import { Customer } from './customer';
 
 @Injectable()
 export class CustomerService {
@@ -8,30 +8,30 @@ export class CustomerService {
 
   cusstomerData: Array<Customer> = [
     {
-      name: "Sayali",
-      age: "27",
-      contactNumber: 830853,
-      address: "mphasis"
+      name: 'abcd',
+      age: '27',
+      contactNumber: 1234,
+      address: 'xyz',
     },
     {
-      name: "Rushi",
-      age: "27",
-      contactNumber: 830854,
-      address: "mphasis"
+      name: 'abcd',
+      age: '27',
+      contactNumber: 1234,
+      address: 'xyz',
     },
     {
-      name: "Rinku",
-      age: "27",
-      contactNumber: 830855,
-      address: "mphasis"
-    }
+      name: 'abcd',
+      age: '27',
+      contactNumber: 1234,
+      address: 'xyz',
+    },
   ];
   customerData() {
     return (this.customer = {
-      name: "Rahul",
-      age: "27",
+      name: 'Rahul',
+      age: '27',
       contactNumber: 830853,
-      address: "mphasis"
+      address: 'xyz',
     });
   }
 }
